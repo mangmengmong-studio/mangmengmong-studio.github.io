@@ -13,7 +13,7 @@
 - Maintain a single `index.html` with five horizontal slides: Hello, Philosophy, Games, Journal, About. Add pages only at the owner's request.
 - Static HTML, plain CSS, vanilla JavaScript. No packages, framework, bundler, backend, or build step without explicit approval.
 - GitHub Pages serves repository-root files on `main`. Keep `.nojekyll`. Use relative assets and hash navigation so project subpaths also work.
-- The owner-authorized Git remote is `https://github.com/mangmengmong-studio/mangmengmong-studio.github.io.git`. Preserve history and `LICENSE`; never force-push. Push only when the current task authorizes it.
+- The owner-authorized Git remote is `https://github.com/muhammadyusufprananda/mangmengmong-studio.github.io.git`. Preserve history and `LICENSE`; never force-push. Push only when the current task authorizes it.
 
 ## Defaults and behavior
 

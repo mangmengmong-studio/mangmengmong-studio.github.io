@@ -32,7 +32,7 @@ Open http://localhost:8000/. All fonts and images are local.
 
 ## Hosting
 
-Repository: https://github.com/mangmengmong-studio/mangmengmong-studio.github.io
+Repository: https://github.com/muhammadyusufprananda/mangmengmong-studio.github.io
 
 In GitHub Settings → Pages, choose **Deploy from a branch**, `main`, `/ (root)`. `.nojekyll` disables Jekyll. No workflow is required. Use relative assets and hash links; no server rewrites are needed.
 
