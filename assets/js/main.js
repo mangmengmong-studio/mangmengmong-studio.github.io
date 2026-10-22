@@ -94,12 +94,12 @@
     caption.removeAttribute('data-i18n');
     thumbnails.forEach((button, i) => button.setAttribute('aria-pressed', String(i === index)));
   };
-  document.querySelector('[data-open-project]').addEventListener('click', (event) => {
+  document.querySelectorAll('[data-open-project]').forEach((project) => project.addEventListener('click', (event) => {
     if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     selectArtwork(selected);
     dialog.showModal();
-  });
+  }));
   dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
   thumbnails.forEach((button, index) => button.addEventListener('click', () => selectArtwork(index)));
   dialog.addEventListener('keydown', (event) => {
