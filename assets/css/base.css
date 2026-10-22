@@ -1,0 +1,169 @@
+@font-face {
+  font-family:Knewave;
+  src:url('../fonts/knewave.ttf') format('truetype');
+  font-weight:400;
+  font-display:swap
+}
+@font-face {
+  font-family:Patrick;
+  src:url('../fonts/patrick-hand.ttf') format('truetype');
+  font-weight:400;
+  font-display:swap
+}
+@font-face {
+  font-family:Nunito;
+  src:url('../fonts/nunito-sans.ttf') format('truetype');
+  font-weight:200 900;
+  font-display:swap
+}
+:root {
+  --paper:#f3efe6;
+  --surface:#faf7ef;
+  --surface-deep:#eae2d2;
+  --ink:#2c2925;
+  --muted:#736b60;
+  --line:#d8cfbf;
+  --accent:#ad4823;
+  --accent-soft:#e9c6aa;
+  --shadow:#3d2d1817;
+  --tape:#c7ae7c80;
+  --space:clamp(1.25rem,5.5vw,5.5rem);
+  --content:1240px;
+  --heading:Knewave,'Comic Sans MS',cursive;
+  --hand:Patrick,cursive;
+  font-family:Nunito,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  font-synthesis:none;
+  color-scheme:light
+}
+:root[data-theme=dark] {
+  --paper:#1b1c1d;
+  --surface:#242526;
+  --surface-deep:#2e2d2b;
+  --ink:#f1ebe0;
+  --muted:#bdb4a6;
+  --line:#45423c;
+  --accent:#eda06e;
+  --accent-soft:#63462f;
+  --shadow:#00000038;
+  --tape:#bba17165;
+  color-scheme:dark
+}
+*,*::before,*::after {
+  box-sizing:border-box
+}
+body {
+  margin:0;
+  font-size:15px;
+  line-height:1.7;
+  background:radial-gradient(ellipse at 0 0,var(--shadow),transparent 55%),var(--paper)
+}
+h1,h2,h3,p,figure {
+  margin:0
+}
+h1,h2,h3 {
+  font-weight:400
+}
+h1,h2 {
+  font-family:var(--heading);
+  letter-spacing:-.035em;
+  line-height:1.25
+}
+h1 {
+  font-size:clamp(2.4rem,4.15vw,4.1rem)
+}
+h2 {
+  font-size:clamp(2rem,3.4vw,3.2rem)
+}
+h3 {
+  font-size:1.25rem
+}
+button,a {
+  -webkit-tap-highlight-color:transparent
+}
+button {
+  font:inherit;
+  color:inherit;
+  cursor:pointer
+}
+a {
+  color:inherit;
+  text-underline-offset:.3em
+}
+img {
+  display:block;
+  max-width:100%;
+  height:auto
+}
+svg {
+  display:block
+}
+button:disabled {
+  cursor:default
+}
+[hidden] {
+  display:none!important
+}
+:focus-visible {
+  outline:2px solid var(--accent);
+  outline-offset:5px
+}
+::selection {
+  background:var(--accent-soft);
+  color:var(--ink)
+}
+.hand-note {
+  font-family:var(--hand);
+  line-height:1.25
+}
+.eyebrow {
+  color:var(--muted);
+  font-size:.65rem;
+  font-weight:750;
+  letter-spacing:.14em;
+  line-height:1.6
+}
+.lead {
+  font-size:clamp(.94rem,1.15vw,1.05rem);
+  line-height:1.8;
+  color:var(--muted);
+  max-width:35rem
+}
+.small-copy {
+  font-size:.8rem;
+  color:var(--muted)
+}
+.sr-only {
+  position:absolute;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip-path:inset(50%);
+  white-space:nowrap
+}
+.svg-definitions {
+  position:absolute;
+  width:0;
+  height:0;
+  overflow:hidden
+}
+.icon {
+  width:20px;
+  height:20px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round
+}
+.sketch {
+  width:50px;
+  height:50px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  color:var(--accent)
+}
